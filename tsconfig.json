@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 编译到最新 JS 特性
+    "useDefineForClassFields": true, // Vue3 推荐配置
+    "module": "ESNext", // 使用 ES 模块
+    "moduleResolution": "Node", // 模块解析方式
+    "strict": true, // 开启严格模式（可以更好地发现问题）
+    "jsx": "preserve", // 支持 .vue 文件里的 jsx
+    "sourceMap": true, // 生成 source map 方便调试
+    "resolveJsonModule": true, // 允许引入 JSON 文件
+    "esModuleInterop": true, // 兼容 CommonJS 模块
+    "lib": ["ESNext", "DOM"], // 支持最新 JS 特性 + 浏览器环境（Promise等）
+    "skipLibCheck": true, // 跳过第三方库的类型检查，加快编译
+    "baseUrl": ".", // 相对路径基础
+    "paths": {
+      "@/*": ["src/*"], // 支持 @ 作为 src 别名
+      "@types/*": ["src/types/*"]
+    },
+    "allowSyntheticDefaultImports": true // 允许默认导入
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist"]
+}
