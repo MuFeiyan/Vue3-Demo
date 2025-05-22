@@ -53,7 +53,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import { Menu, House, Document, DataAnalysis } from '@element-plus/icons-vue'
+import { Menu, House } from '@element-plus/icons-vue'
 import { useCommonInfo } from '@/store/commonInfo'
 import { useUserStore } from '@/store/user'
 import router from '@/router'

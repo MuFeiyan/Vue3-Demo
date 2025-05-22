@@ -11,6 +11,10 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/',
+    redirect: '/home' // 根路径重定向到 /home
+  },
+  {
+    path: '/',
     component: Layout,
     children: [
       { path: '/home', component: () => import('@/pages/Home/index.vue') },

@@ -13,6 +13,7 @@ export const useUserStore = defineStore('user', {
       this.userInfo = info
     },
     clearToken() {
+      this.userInfo = { name: '' }
       this.token = ''
     }
   },
